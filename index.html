@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A-Frame Solar System Lab</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <img src="rename.jpg" id="skyTexture">
+            <img src="earth.jpg" id="Earth">
+            <img src="https://media.npr.org/assets/img/2018/08/10/gettyimages-1014300320_wide-1ba57d836477f1621191f6e4ac5b830ec0fd3f5e-s800-c85.jpg" id="sun">
+            <img src="far.jpg" id="merc">
+            <img src="https://planetarymapping.files.wordpress.com/2016/02/marsmapujkiadasfull.jpg" id="venu">
+            <img src="http://www.texturesforplanets.com/images/tutorial/Martian-EQUIRECTANGULAR-1-1024x512.png" id="mars">
+        </a-assets>
+        <a-sphere id="Mercury" position="-8 1 -20" radius="0.2" src="#merc" >
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Venus" position="-7 1 -20" radius="0.45" src="#venu" >
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        
+<a-entity>
+
+    <a-sphere id="Earth" position="-5 1 -20" radius="1" src="#Earth">
+        <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+    </a-sphere>
+    
+    <a-animation attribute="rotation" dur="5000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+
+</a-entity>
+        
+        <a-sphere id="Mars" position="-3 1 -20" radius="0.25" src="#mars" >
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Jupiter" position="4 1 -20" radius="5.6" src="" >
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Saturn" position="20 1 -20" radius="4.75" src="" color="">
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Uranus" position="28 1 -20" radius="2.0" src="" color="">
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Neptune" position="35 1 -20" radius="1.95" src="" color="">
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Pluto" position="40 1 -20" radius="0.1" src="" color="">
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+        <a-sphere id="Sun" position="-12 1 -20" radius="3" src="#sun" color="yellow">
+            <a-animation attribute="rotation" dur="2000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-sphere>
+
+        <a-sky src="#skyTexture"></a-sky>
+    </a-scene>
+</body>
+
+</html>
